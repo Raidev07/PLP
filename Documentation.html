@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>Pamantasan ng Lungsod Pasig</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamantasan ng Lungsod ng Pasig</title>
     <link rel="icon" href="img/plplogo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-----main function or content ------>
-    <header>
-            <img src="img/plplogo.png" class="plplogo">
+    <!-----main function or content ------>
+    <header id="header">
+        <img src="img/plplogo.png" class="plplogo" alt="PLP Logo">
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Course.html">Course</a></li>
@@ -19,15 +20,16 @@
                 <li><a href="Documentation.html">Documentation</a></li>
                 <li><a href="About.html">About</a></li>
             </ul>
-            <img src="img/ccslogo.png" class="csslogo">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <img src="img/ccslogo.png" class="csslogo" alt="CCS Logo">
     </header>
-    <section class="subheader"></section>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
-    </script>
+
+    <script src="script.js"></script>
 
     <section class="documentation">
         <h1>Documentation</h1>
